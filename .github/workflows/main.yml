@@ -91,6 +91,6 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: Firmware.zip
+          name: Firmware
           path: /opt/rt-n56u/trunk/images/*.trx
 
