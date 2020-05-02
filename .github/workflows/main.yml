@@ -89,6 +89,6 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: NEWIFI3_3.4.3.9-099
-          path: /opt/rt-n56u/trunk/images/NEWIFI3_3.4.3.9-099.trx
+          name: Firmware
+          path: /opt/rt-n56u/trunk/images/*.trx
 
