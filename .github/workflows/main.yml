@@ -82,7 +82,7 @@ jobs:
           sed -i 's/192.168.2.244/192.168.123.199/g' /opt/rt-n56u/trunk/user/shared/defaults.h
           sed -i 's/1234567890/12345678/g' /opt/rt-n56u/trunk/user/shared/defaults.h
           sed -i 's/2001:470:0:50::2/ntp2.aliyun.com/g' /opt/rt-n56u/trunk/user/shared/defaults.h
-          sed -i 's/FIRMWARE_BUILDS_VER=099/FIRMWARE_BUILDS_VER=$VERSION_TIME/g' /opt/rt-n56u/trunk/versions.inc
+          sed -i "s/FIRMWARE_BUILDS_VER=099/FIRMWARE_BUILDS_VER=$VERSION_TIME/g" /opt/rt-n56u/trunk/versions.inc
       - name: Build Firmware
         run: |
           cd /opt/rt-n56u/trunk
@@ -91,6 +91,5 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v1
         with:
-          name: FIRMWARE.zip
-          path: /opt/rt-n56u/trunk/images/*.trx
+          path: /opt/rt-n56u/trunk/images/
 
