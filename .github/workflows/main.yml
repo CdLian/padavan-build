@@ -90,6 +90,6 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: NEWIFI3_3.4.3.9-20200502.trx
+          name: NEWIFI3_3.4.3.9-20200502
           path: /opt/rt-n56u/trunk/images/NEWIFI3_3.4.3.9-20200502.trx
 
