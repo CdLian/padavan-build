@@ -81,7 +81,7 @@ jobs:
           sed -i 's/192.168.2.244/192.168.123.199/g' /opt/rt-n56u/trunk/user/shared/defaults.h
           sed -i 's/1234567890/12345678/g' /opt/rt-n56u/trunk/user/shared/defaults.h
           sed -i 's/2001:470:0:50::2/ntp2.aliyun.com/g' /opt/rt-n56u/trunk/user/shared/defaults.h
-          sed -i 's/FIRMWARE_BUILDS_REV=.+/FIRMWARE_BUILDS_REV=$(shell date +%Y%m%d)/g' /opt/rt-n56u/trunk/versions.inc
+          sed -i 's/FIRMWARE_BUILDS_REV=.*/FIRMWARE_BUILDS_REV=$(shell date +%Y%m%d)/g' /opt/rt-n56u/trunk/versions.inc
           cat /opt/rt-n56u/trunk/versions.inc
 #       - name: Build Firmware
 #         run: |
